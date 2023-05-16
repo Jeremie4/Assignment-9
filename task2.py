@@ -57,26 +57,26 @@ def main():
     print("Thanks for taking care of a Blobber")
 
 def displayName(blobber):
-    print("Your Blobber's name is " + Blobber.GetName())
+    print("Your Blobber's name is " + blobber.GetName())
 
 def changeName(blobber):
     name = input("Enter Blobber's new name: ")
-    Blobber.ChangeName(name)
-    displayName(myBlobber)
+    blobber.ChangeName(name)
+    displayName(blobber)
 
 def displayColor(blobber):
-    print("Your Blobber's color is " + Blobber.GetColor())
+    print("Your Blobber's color is " + blobber.GetColor())
 
 def changeColor(blobber):
     color = input("Enter Blobber's new color: ")
-    Blobber.ChangeColor(color)
-    displayColor(myBlobber)
+    blobber.ChangeColor(color)
+    displayColor(blobber)
 
 def feedBlobber(blobber):
     food = eval(input("Enter amount to you feed your Blobber: "))
-    Blobber.BlobberFeed(food)
+    blobber.BlobberFeed(food)
 
 def blobberSpeak(blobber):
-    print("Speak")
+    print(blobber.Speak())
 
 main()
